@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "autoname": "field:skill",
+ "creation": "2022-01-19 02:45:22.325199",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Skill",
+   "options": "Skill",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "skill.description",
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-19 02:46:36.253354",
+ "modified_by": "Administrator",
+ "module": "Interview",
+ "name": "Skill Set Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "autoname": "INT-.####",
+ "creation": "2021-04-12 12:57:19.902866",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "interview_type",
+  "expected_average_rating",
+  "column_break_3",
+  "designation",
+  "interviewers",
+  "expected_skills_section",
+  "expected_skill_set"
+ ],
+ "fields": [
+  {
+   "fieldname": "interview_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Interview Type",
+   "options": "Interview Type Doc",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "interviewers",
+   "fieldtype": "Table MultiSelect",
+   "label": "Interviewers",
+   "options": "Interviewer Multiselect"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Job Designation"
+  },
+  {
+   "fieldname": "expected_average_rating",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Expected Average Rating",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_skills_section",
+   "fieldtype": "Section Break",
+   "label": "Expected Skillset"
+  },
+  {
+   "fieldname": "expected_skill_set",
+   "fieldtype": "Table",
+   "options": "Skill Set Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-19 02:46:10.457216",
+ "modified_by": "Administrator",
+ "module": "Interview",
+ "name": "Interview Round Doc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Interviewer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "interview_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "interview_type",
+ "track_changes": 1
+}
